@@ -9,7 +9,30 @@
 import Cocoa
 
 class Document: NSDocument {
-
+    // MARK: Keys
+    fileprivate enum Keys: String {
+        case addedDate = "addedDate"
+        case modifyDate = "modifyDate"
+        case name = "name"
+        case template = "template"
+        case firstPage = "firstPage"
+        case lastPage = "lastPage"
+        case pages = "pages"
+        case user = "user"
+        case group = "group"
+        case image = "image"
+        case next = "next"
+        case previous = "previous"
+        case audio = "audio"
+        case number = "number"
+        case title = "title"
+        case document = "document"
+        case page = "page"
+        
+    }
+    var title : String!
+    var image : NSData!
+    
     override init() {
         super.init()
         // Add your subclass-specific initialization here.
@@ -32,11 +55,36 @@ class Document: NSDocument {
         throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
     }
 
-    override func read(from data: Data, ofType typeName: String) throws {
+    override func read(from url: URL, ofType typeName: String) throws {
+        // 1
+        guard let dictionary = NSDictionary(contentsOf: url),
+            let doc = dictionary as? [String: AnyObject],
+            let name = doc[Keys.name.rawValue] as? String,
+            let addedDate = doc[Keys.addedDate.rawValue] as? NSDate,
+            let modifyDate = doc[Keys.modifyDate.rawValue] as? NSDate,
+            let template = doc[Keys.template.rawValue] as? Bool,
+            let user = doc[Keys.user.rawValue] as? String,
+            let group = doc[Keys.group.rawValue] as? String,
+            let pages = doc[Keys.pages.rawValue] as? [NSDictionary]
+            else {
+                return
+        }
+        for item in pages { // loop through data items
+            let p = item as! [String: AnyObject]
+            let addedDate = p[Keys.addedDate.rawValue] as? NSDate
+            let modifyDate = p[Keys.modifyDate.rawValue] as? NSDate
+            let number = p[Keys.number.rawValue] as! Int16
+            let title = p[Keys.title.rawValue] as? String
+            let audio = p[Keys.audio.rawValue] as? NSData
+            let imageData = p[Keys.image.rawValue] as? NSData
+            
+            self.image = imageData
+        }
+        self.title = name
         // Insert code here to read your document from the given data of the specified type. If outError != nil, ensure that you create and set an appropriate error when returning false.
         // You can also choose to override readFromFileWrapper:ofType:error: or readFromURL:ofType:error: instead.
         // If you override either of these, you should also override -isEntireFileLoaded to return false if the contents are lazily loaded.
-        throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
+        //throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
     }
 
 

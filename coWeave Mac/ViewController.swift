@@ -107,11 +107,15 @@ class ViewController: NSViewController {
     
     @IBAction func prevPage(_ sender: Any) {
         print("prev")
+        self.player.stop()
+        self.playAudio.title = "Play audio"
         getPage(index: currentPage-1)
     }
     
     @IBAction func nextPage(_ sender: Any) {
         print("next")
+        self.player.stop()
+        self.playAudio.title = "Play audio"
         getPage(index: currentPage+1)
     }
     

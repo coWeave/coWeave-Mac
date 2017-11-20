@@ -10,7 +10,7 @@ import Cocoa
 
 class Document: NSDocument {
     // MARK: Keys
-    fileprivate enum Keys: String {
+    enum Keys: String {
         case addedDate = "addedDate"
         case modifyDate = "modifyDate"
         case name = "name"
@@ -31,7 +31,9 @@ class Document: NSDocument {
         
     }
     var title : String!
-    var image : NSData!
+    var modifyDate : NSDate!
+    var pages : [NSDictionary]!
+    
     
     override init() {
         super.init()
@@ -69,22 +71,10 @@ class Document: NSDocument {
             else {
                 return
         }
-        for item in pages { // loop through data items
-            let p = item as! [String: AnyObject]
-            let addedDate = p[Keys.addedDate.rawValue] as? NSDate
-            let modifyDate = p[Keys.modifyDate.rawValue] as? NSDate
-            let number = p[Keys.number.rawValue] as! Int16
-            let title = p[Keys.title.rawValue] as? String
-            let audio = p[Keys.audio.rawValue] as? NSData
-            let imageData = p[Keys.image.rawValue] as? NSData
-            
-            self.image = imageData
-        }
-        self.title = name
-        // Insert code here to read your document from the given data of the specified type. If outError != nil, ensure that you create and set an appropriate error when returning false.
-        // You can also choose to override readFromFileWrapper:ofType:error: or readFromURL:ofType:error: instead.
-        // If you override either of these, you should also override -isEntireFileLoaded to return false if the contents are lazily loaded.
-        //throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
+
+        self.title = (user == "none") ? name : "\(name) - \(user) (\(group))"
+        self.modifyDate = modifyDate
+        self.pages = pages
     }
 
 

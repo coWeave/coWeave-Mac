@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
         <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
     </dependencies>
@@ -202,8 +203,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="750" height="590"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="07D-98-4Pk">
-                                <rect key="frame" x="-2" y="540" width="754" height="30"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="07D-98-4Pk">
+                                <rect key="frame" x="99" y="540" width="556" height="30"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="0vp-ga-4Jv">
                                     <font key="font" metaFont="systemBold" size="20"/>
                                     <color key="textColor" red="0.54901960780000003" green="0.77647058820000003" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -218,21 +219,27 @@
                                 </constraints>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="photo" id="CLq-kA-jbx"/>
                             </imageView>
-                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y3p-cJ-V8Q">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="y3p-cJ-V8Q">
                                 <rect key="frame" x="655" y="13" width="81" height="32"/>
-                                <buttonCell key="cell" type="push" title="Next" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="c5B-mJ-zG2">
+                                <buttonCell key="cell" type="push" title="Next" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="c5B-mJ-zG2">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="nextPage:" target="5gI-5U-AMq" id="7E4-C2-E68"/>
+                                </connections>
                             </button>
-                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pod-Xi-KyC">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Pod-Xi-KyC">
                                 <rect key="frame" x="6" y="13" width="81" height="32"/>
-                                <buttonCell key="cell" type="push" title="Previous" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="WxE-cr-SH1">
+                                <buttonCell key="cell" type="push" title="Previous" bezelStyle="rounded" imagePosition="overlaps" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="WxE-cr-SH1">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="prevPage:" target="5gI-5U-AMq" id="L10-Gz-6za"/>
+                                </connections>
                             </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uQU-rc-tDd">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uQU-rc-tDd">
                                 <rect key="frame" x="87" y="16" width="568" height="30"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Page 1" id="pgE-cd-R9a">
                                     <font key="font" metaFont="systemMedium" size="17"/>
@@ -240,24 +247,50 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NxV-wv-F7Z">
+                                <rect key="frame" x="609" y="542" width="127" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="J9l-eN-rIW"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Play Audio" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KCG-4o-scI">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="playAudioAction:" target="5gI-5U-AMq" id="Da1-9m-p3A"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="BqK-7i-5JF" firstAttribute="centerX" secondItem="ERx-hH-rdd" secondAttribute="centerX" id="Aah-uZ-t3r"/>
                             <constraint firstAttribute="bottom" secondItem="uQU-rc-tDd" secondAttribute="bottom" constant="16" id="F2F-8c-rTG"/>
                             <constraint firstAttribute="trailing" secondItem="y3p-cJ-V8Q" secondAttribute="trailing" constant="20" id="H6E-jR-HIt"/>
+                            <constraint firstItem="07D-98-4Pk" firstAttribute="top" secondItem="NxV-wv-F7Z" secondAttribute="top" id="IZL-aC-BNQ"/>
+                            <constraint firstItem="y3p-cJ-V8Q" firstAttribute="leading" secondItem="uQU-rc-tDd" secondAttribute="trailing" constant="8" symbolic="YES" id="L4H-Pg-Pqz"/>
                             <constraint firstItem="BqK-7i-5JF" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" constant="58" id="SiS-3f-0oB"/>
-                            <constraint firstItem="07D-98-4Pk" firstAttribute="centerX" secondItem="ERx-hH-rdd" secondAttribute="centerX" id="W6o-bs-QoR"/>
+                            <constraint firstItem="07D-98-4Pk" firstAttribute="centerX" secondItem="ERx-hH-rdd" secondAttribute="centerX" constant="2" id="W6o-bs-QoR"/>
+                            <constraint firstItem="y3p-cJ-V8Q" firstAttribute="baseline" secondItem="Pod-Xi-KyC" secondAttribute="firstBaseline" id="WVx-5L-QSK"/>
                             <constraint firstAttribute="bottom" secondItem="Pod-Xi-KyC" secondAttribute="bottom" constant="20" id="XsL-Cj-vFU"/>
+                            <constraint firstItem="07D-98-4Pk" firstAttribute="trailing" secondItem="uQU-rc-tDd" secondAttribute="trailing" id="bbK-ei-Ri3"/>
                             <constraint firstItem="Pod-Xi-KyC" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" constant="12" id="fTZ-d5-eFE"/>
+                            <constraint firstItem="Pod-Xi-KyC" firstAttribute="centerY" secondItem="uQU-rc-tDd" secondAttribute="centerY" id="gDl-pZ-PZp"/>
                             <constraint firstItem="BqK-7i-5JF" firstAttribute="width" secondItem="ERx-hH-rdd" secondAttribute="width" id="mrF-ok-myh"/>
+                            <constraint firstAttribute="trailing" secondItem="07D-98-4Pk" secondAttribute="trailing" constant="97" id="pDL-29-qR8"/>
                             <constraint firstAttribute="bottom" secondItem="y3p-cJ-V8Q" secondAttribute="bottom" constant="20" id="rGp-pf-4Lu"/>
+                            <constraint firstItem="NxV-wv-F7Z" firstAttribute="trailing" secondItem="y3p-cJ-V8Q" secondAttribute="trailing" id="rOv-DR-p2E"/>
+                            <constraint firstItem="BqK-7i-5JF" firstAttribute="top" secondItem="07D-98-4Pk" secondAttribute="bottom" constant="8" symbolic="YES" id="rzA-Yh-K8p"/>
+                            <constraint firstItem="uQU-rc-tDd" firstAttribute="leading" secondItem="Pod-Xi-KyC" secondAttribute="trailing" constant="8" symbolic="YES" id="sBj-qd-opa"/>
                             <constraint firstItem="07D-98-4Pk" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" constant="20" id="wn0-B2-YCt"/>
-                            <constraint firstItem="uQU-rc-tDd" firstAttribute="centerX" secondItem="ERx-hH-rdd" secondAttribute="centerX" id="yua-Mp-fNs"/>
+                            <constraint firstItem="uQU-rc-tDd" firstAttribute="centerX" secondItem="ERx-hH-rdd" secondAttribute="centerX" constant="-4" id="yua-Mp-fNs"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="image" destination="BqK-7i-5JF" id="sQV-Xp-Xz1"/>
                         <outlet property="name" destination="07D-98-4Pk" id="cMB-YK-Iv6"/>
+                        <outlet property="next" destination="y3p-cJ-V8Q" id="ELT-a8-LTy"/>
+                        <outlet property="pageName" destination="uQU-rc-tDd" id="udb-Hb-LO1"/>
+                        <outlet property="playAudio" destination="NxV-wv-F7Z" id="5om-tr-I3m"/>
+                        <outlet property="previous" destination="Pod-Xi-KyC" id="gSD-eY-9b3"/>
                     </connections>
                 </viewController>
                 <customObject id="2Tp-Fl-jBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

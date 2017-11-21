@@ -34,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05B53D731FC2E125003639B4 /* coWeave Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coWeave Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05B53D731FC2E125003639B4 /* coWeave Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coWeave Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B53D761FC2E125003639B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05B53D781FC2E125003639B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		05B53D7A1FC2E125003639B4 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
@@ -42,10 +42,10 @@
 		05B53D7F1FC2E125003639B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05B53D811FC2E125003639B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05B53D821FC2E125003639B4 /* coWeave_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = coWeave_Mac.entitlements; sourceTree = "<group>"; };
-		05B53D871FC2E125003639B4 /* coWeave MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coWeave MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05B53D871FC2E125003639B4 /* coWeave ViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coWeave ViewerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B53D8B1FC2E125003639B4 /* coWeave_MacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coWeave_MacTests.swift; sourceTree = "<group>"; };
 		05B53D8D1FC2E125003639B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05B53D921FC2E125003639B4 /* coWeave MacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coWeave MacUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05B53D921FC2E125003639B4 /* coWeave ViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coWeave ViewerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B53D961FC2E125003639B4 /* coWeave_MacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coWeave_MacUITests.swift; sourceTree = "<group>"; };
 		05B53D981FC2E125003639B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,9 +88,9 @@
 		05B53D741FC2E125003639B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				05B53D731FC2E125003639B4 /* coWeave Mac.app */,
-				05B53D871FC2E125003639B4 /* coWeave MacTests.xctest */,
-				05B53D921FC2E125003639B4 /* coWeave MacUITests.xctest */,
+				05B53D731FC2E125003639B4 /* coWeave Viewer.app */,
+				05B53D871FC2E125003639B4 /* coWeave ViewerTests.xctest */,
+				05B53D921FC2E125003639B4 /* coWeave ViewerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		05B53D721FC2E125003639B4 /* coWeave Mac */ = {
+		05B53D721FC2E125003639B4 /* coWeave Viewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05B53D9B1FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeave Mac" */;
+			buildConfigurationList = 05B53D9B1FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeave Viewer" */;
 			buildPhases = (
 				05B53D6F1FC2E125003639B4 /* Sources */,
 				05B53D701FC2E125003639B4 /* Frameworks */,
@@ -142,14 +142,14 @@
 			);
 			dependencies = (
 			);
-			name = "coWeave Mac";
+			name = "coWeave Viewer";
 			productName = "coWeave Mac";
-			productReference = 05B53D731FC2E125003639B4 /* coWeave Mac.app */;
+			productReference = 05B53D731FC2E125003639B4 /* coWeave Viewer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		05B53D861FC2E125003639B4 /* coWeave MacTests */ = {
+		05B53D861FC2E125003639B4 /* coWeave ViewerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05B53D9E1FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeave MacTests" */;
+			buildConfigurationList = 05B53D9E1FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeave ViewerTests" */;
 			buildPhases = (
 				05B53D831FC2E125003639B4 /* Sources */,
 				05B53D841FC2E125003639B4 /* Frameworks */,
@@ -160,14 +160,14 @@
 			dependencies = (
 				05B53D891FC2E125003639B4 /* PBXTargetDependency */,
 			);
-			name = "coWeave MacTests";
+			name = "coWeave ViewerTests";
 			productName = "coWeave MacTests";
-			productReference = 05B53D871FC2E125003639B4 /* coWeave MacTests.xctest */;
+			productReference = 05B53D871FC2E125003639B4 /* coWeave ViewerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		05B53D911FC2E125003639B4 /* coWeave MacUITests */ = {
+		05B53D911FC2E125003639B4 /* coWeave ViewerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05B53DA11FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeave MacUITests" */;
+			buildConfigurationList = 05B53DA11FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeave ViewerUITests" */;
 			buildPhases = (
 				05B53D8E1FC2E125003639B4 /* Sources */,
 				05B53D8F1FC2E125003639B4 /* Frameworks */,
@@ -178,9 +178,9 @@
 			dependencies = (
 				05B53D941FC2E125003639B4 /* PBXTargetDependency */,
 			);
-			name = "coWeave MacUITests";
+			name = "coWeave ViewerUITests";
 			productName = "coWeave MacUITests";
-			productReference = 05B53D921FC2E125003639B4 /* coWeave MacUITests.xctest */;
+			productReference = 05B53D921FC2E125003639B4 /* coWeave ViewerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 05B53D6E1FC2E125003639B4 /* Build configuration list for PBXProject "coWeave Mac" */;
+			buildConfigurationList = 05B53D6E1FC2E125003639B4 /* Build configuration list for PBXProject "coWeave Viewer" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -222,9 +222,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				05B53D721FC2E125003639B4 /* coWeave Mac */,
-				05B53D861FC2E125003639B4 /* coWeave MacTests */,
-				05B53D911FC2E125003639B4 /* coWeave MacUITests */,
+				05B53D721FC2E125003639B4 /* coWeave Viewer */,
+				05B53D861FC2E125003639B4 /* coWeave ViewerTests */,
+				05B53D911FC2E125003639B4 /* coWeave ViewerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -287,12 +287,12 @@
 /* Begin PBXTargetDependency section */
 		05B53D891FC2E125003639B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 05B53D721FC2E125003639B4 /* coWeave Mac */;
+			target = 05B53D721FC2E125003639B4 /* coWeave Viewer */;
 			targetProxy = 05B53D881FC2E125003639B4 /* PBXContainerItemProxy */;
 		};
 		05B53D941FC2E125003639B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 05B53D721FC2E125003639B4 /* coWeave Mac */;
+			target = 05B53D721FC2E125003639B4 /* coWeave Viewer */;
 			targetProxy = 05B53D931FC2E125003639B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -462,7 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "lu.coweave.mac.viewer.coWeave-MacTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coWeave Mac.app/Contents/MacOS/coWeave Mac";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coWeave Viewer.app/Contents/MacOS/coWeave Viewer";
 			};
 			name = Debug;
 		};
@@ -479,7 +479,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "lu.coweave.mac.viewer.coWeave-MacTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coWeave Mac.app/Contents/MacOS/coWeave Mac";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coWeave Viewer.app/Contents/MacOS/coWeave Viewer";
 			};
 			name = Release;
 		};
@@ -518,7 +518,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		05B53D6E1FC2E125003639B4 /* Build configuration list for PBXProject "coWeave Mac" */ = {
+		05B53D6E1FC2E125003639B4 /* Build configuration list for PBXProject "coWeave Viewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05B53D991FC2E125003639B4 /* Debug */,
@@ -527,7 +527,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		05B53D9B1FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeave Mac" */ = {
+		05B53D9B1FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeave Viewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05B53D9C1FC2E125003639B4 /* Debug */,
@@ -536,7 +536,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		05B53D9E1FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeave MacTests" */ = {
+		05B53D9E1FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeave ViewerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05B53D9F1FC2E125003639B4 /* Debug */,
@@ -545,7 +545,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		05B53DA11FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeave MacUITests" */ = {
+		05B53DA11FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeave ViewerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05B53DA21FC2E125003639B4 /* Debug */,

@@ -12,8 +12,8 @@
 		05B53D7B1FC2E125003639B4 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B53D7A1FC2E125003639B4 /* Document.swift */; };
 		05B53D7D1FC2E125003639B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05B53D7C1FC2E125003639B4 /* Assets.xcassets */; };
 		05B53D801FC2E125003639B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B53D7E1FC2E125003639B4 /* Main.storyboard */; };
-		05B53D8C1FC2E125003639B4 /* coWeave_MacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B53D8B1FC2E125003639B4 /* coWeave_MacTests.swift */; };
-		05B53D971FC2E125003639B4 /* coWeave_MacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B53D961FC2E125003639B4 /* coWeave_MacUITests.swift */; };
+		05B53D8C1FC2E125003639B4 /* coWeave_ViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B53D8B1FC2E125003639B4 /* coWeave_ViewerTests.swift */; };
+		05B53D971FC2E125003639B4 /* coWeave_ViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B53D961FC2E125003639B4 /* coWeave_ViewerUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +34,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05B53D731FC2E125003639B4 /* coWeave Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coWeave Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05B53D731FC2E125003639B4 /* coWeaveViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coWeaveViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B53D761FC2E125003639B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05B53D781FC2E125003639B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		05B53D7A1FC2E125003639B4 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		05B53D7C1FC2E125003639B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05B53D7F1FC2E125003639B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05B53D811FC2E125003639B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05B53D821FC2E125003639B4 /* coWeave_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = coWeave_Mac.entitlements; sourceTree = "<group>"; };
-		05B53D871FC2E125003639B4 /* coWeave ViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coWeave ViewerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		05B53D8B1FC2E125003639B4 /* coWeave_MacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coWeave_MacTests.swift; sourceTree = "<group>"; };
+		05B53D821FC2E125003639B4 /* coWeave_Viewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = coWeave_Viewer.entitlements; sourceTree = "<group>"; };
+		05B53D871FC2E125003639B4 /* coWeaveViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coWeaveViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05B53D8B1FC2E125003639B4 /* coWeave_ViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coWeave_ViewerTests.swift; sourceTree = "<group>"; };
 		05B53D8D1FC2E125003639B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05B53D921FC2E125003639B4 /* coWeave ViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coWeave ViewerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		05B53D961FC2E125003639B4 /* coWeave_MacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coWeave_MacUITests.swift; sourceTree = "<group>"; };
+		05B53D921FC2E125003639B4 /* coWeaveViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coWeaveViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05B53D961FC2E125003639B4 /* coWeave_ViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coWeave_ViewerUITests.swift; sourceTree = "<group>"; };
 		05B53D981FC2E125003639B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,9 +78,9 @@
 		05B53D6A1FC2E125003639B4 = {
 			isa = PBXGroup;
 			children = (
-				05B53D751FC2E125003639B4 /* coWeave Mac */,
-				05B53D8A1FC2E125003639B4 /* coWeave MacTests */,
-				05B53D951FC2E125003639B4 /* coWeave MacUITests */,
+				05B53D751FC2E125003639B4 /* coWeave Viewer */,
+				05B53D8A1FC2E125003639B4 /* coWeave ViewerTests */,
+				05B53D951FC2E125003639B4 /* coWeave ViewerUITests */,
 				05B53D741FC2E125003639B4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,14 +88,14 @@
 		05B53D741FC2E125003639B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				05B53D731FC2E125003639B4 /* coWeave Viewer.app */,
-				05B53D871FC2E125003639B4 /* coWeave ViewerTests.xctest */,
-				05B53D921FC2E125003639B4 /* coWeave ViewerUITests.xctest */,
+				05B53D731FC2E125003639B4 /* coWeaveViewer.app */,
+				05B53D871FC2E125003639B4 /* coWeaveViewerTests.xctest */,
+				05B53D921FC2E125003639B4 /* coWeaveViewerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		05B53D751FC2E125003639B4 /* coWeave Mac */ = {
+		05B53D751FC2E125003639B4 /* coWeave Viewer */ = {
 			isa = PBXGroup;
 			children = (
 				05B53D761FC2E125003639B4 /* AppDelegate.swift */,
@@ -104,35 +104,35 @@
 				05B53D7C1FC2E125003639B4 /* Assets.xcassets */,
 				05B53D7E1FC2E125003639B4 /* Main.storyboard */,
 				05B53D811FC2E125003639B4 /* Info.plist */,
-				05B53D821FC2E125003639B4 /* coWeave_Mac.entitlements */,
+				05B53D821FC2E125003639B4 /* coWeave_Viewer.entitlements */,
 			);
-			path = "coWeave Mac";
+			path = "coWeave Viewer";
 			sourceTree = "<group>";
 		};
-		05B53D8A1FC2E125003639B4 /* coWeave MacTests */ = {
+		05B53D8A1FC2E125003639B4 /* coWeave ViewerTests */ = {
 			isa = PBXGroup;
 			children = (
-				05B53D8B1FC2E125003639B4 /* coWeave_MacTests.swift */,
+				05B53D8B1FC2E125003639B4 /* coWeave_ViewerTests.swift */,
 				05B53D8D1FC2E125003639B4 /* Info.plist */,
 			);
-			path = "coWeave MacTests";
+			path = "coWeave ViewerTests";
 			sourceTree = "<group>";
 		};
-		05B53D951FC2E125003639B4 /* coWeave MacUITests */ = {
+		05B53D951FC2E125003639B4 /* coWeave ViewerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				05B53D961FC2E125003639B4 /* coWeave_MacUITests.swift */,
+				05B53D961FC2E125003639B4 /* coWeave_ViewerUITests.swift */,
 				05B53D981FC2E125003639B4 /* Info.plist */,
 			);
-			path = "coWeave MacUITests";
+			path = "coWeave ViewerUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		05B53D721FC2E125003639B4 /* coWeave Viewer */ = {
+		05B53D721FC2E125003639B4 /* coWeaveViewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05B53D9B1FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeave Viewer" */;
+			buildConfigurationList = 05B53D9B1FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeaveViewer" */;
 			buildPhases = (
 				05B53D6F1FC2E125003639B4 /* Sources */,
 				05B53D701FC2E125003639B4 /* Frameworks */,
@@ -142,14 +142,14 @@
 			);
 			dependencies = (
 			);
-			name = "coWeave Viewer";
+			name = coWeaveViewer;
 			productName = "coWeave Mac";
-			productReference = 05B53D731FC2E125003639B4 /* coWeave Viewer.app */;
+			productReference = 05B53D731FC2E125003639B4 /* coWeaveViewer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		05B53D861FC2E125003639B4 /* coWeave ViewerTests */ = {
+		05B53D861FC2E125003639B4 /* coWeaveViewerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05B53D9E1FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeave ViewerTests" */;
+			buildConfigurationList = 05B53D9E1FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeaveViewerTests" */;
 			buildPhases = (
 				05B53D831FC2E125003639B4 /* Sources */,
 				05B53D841FC2E125003639B4 /* Frameworks */,
@@ -160,14 +160,14 @@
 			dependencies = (
 				05B53D891FC2E125003639B4 /* PBXTargetDependency */,
 			);
-			name = "coWeave ViewerTests";
+			name = coWeaveViewerTests;
 			productName = "coWeave MacTests";
-			productReference = 05B53D871FC2E125003639B4 /* coWeave ViewerTests.xctest */;
+			productReference = 05B53D871FC2E125003639B4 /* coWeaveViewerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		05B53D911FC2E125003639B4 /* coWeave ViewerUITests */ = {
+		05B53D911FC2E125003639B4 /* coWeaveViewerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05B53DA11FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeave ViewerUITests" */;
+			buildConfigurationList = 05B53DA11FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeaveViewerUITests" */;
 			buildPhases = (
 				05B53D8E1FC2E125003639B4 /* Sources */,
 				05B53D8F1FC2E125003639B4 /* Frameworks */,
@@ -178,9 +178,9 @@
 			dependencies = (
 				05B53D941FC2E125003639B4 /* PBXTargetDependency */,
 			);
-			name = "coWeave ViewerUITests";
+			name = coWeaveViewerUITests;
 			productName = "coWeave MacUITests";
-			productReference = 05B53D921FC2E125003639B4 /* coWeave ViewerUITests.xctest */;
+			productReference = 05B53D921FC2E125003639B4 /* coWeaveViewerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 05B53D6E1FC2E125003639B4 /* Build configuration list for PBXProject "coWeave Viewer" */;
+			buildConfigurationList = 05B53D6E1FC2E125003639B4 /* Build configuration list for PBXProject "coWeaveViewer" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -222,9 +222,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				05B53D721FC2E125003639B4 /* coWeave Viewer */,
-				05B53D861FC2E125003639B4 /* coWeave ViewerTests */,
-				05B53D911FC2E125003639B4 /* coWeave ViewerUITests */,
+				05B53D721FC2E125003639B4 /* coWeaveViewer */,
+				05B53D861FC2E125003639B4 /* coWeaveViewerTests */,
+				05B53D911FC2E125003639B4 /* coWeaveViewerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -270,7 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05B53D8C1FC2E125003639B4 /* coWeave_MacTests.swift in Sources */,
+				05B53D8C1FC2E125003639B4 /* coWeave_ViewerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05B53D971FC2E125003639B4 /* coWeave_MacUITests.swift in Sources */,
+				05B53D971FC2E125003639B4 /* coWeave_ViewerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,12 +287,12 @@
 /* Begin PBXTargetDependency section */
 		05B53D891FC2E125003639B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 05B53D721FC2E125003639B4 /* coWeave Viewer */;
+			target = 05B53D721FC2E125003639B4 /* coWeaveViewer */;
 			targetProxy = 05B53D881FC2E125003639B4 /* PBXContainerItemProxy */;
 		};
 		05B53D941FC2E125003639B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 05B53D721FC2E125003639B4 /* coWeave Viewer */;
+			target = 05B53D721FC2E125003639B4 /* coWeaveViewer */;
 			targetProxy = 05B53D931FC2E125003639B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -419,15 +419,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "coWeave Mac/coWeave_Mac.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "coWeave Viewer/coWeave_Viewer.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 82T63N97ZX;
-				INFOPLIST_FILE = "coWeave Mac/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/coWeave Viewer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = lu.coweave.mac.viewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -436,15 +438,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "coWeave Mac/coWeave_Mac.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "coWeave Viewer/coWeave_Viewer.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 82T63N97ZX;
-				INFOPLIST_FILE = "coWeave Mac/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/coWeave Viewer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = lu.coweave.mac.viewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -462,7 +466,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "lu.coweave.mac.viewer.coWeave-MacTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coWeave Viewer.app/Contents/MacOS/coWeave Viewer";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coWeaveViewer.app/Contents/MacOS/coWeaveViewer";
 			};
 			name = Debug;
 		};
@@ -479,7 +483,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "lu.coweave.mac.viewer.coWeave-MacTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coWeave Viewer.app/Contents/MacOS/coWeave Viewer";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coWeaveViewer.app/Contents/MacOS/coWeaveViewer";
 			};
 			name = Release;
 		};
@@ -518,7 +522,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		05B53D6E1FC2E125003639B4 /* Build configuration list for PBXProject "coWeave Viewer" */ = {
+		05B53D6E1FC2E125003639B4 /* Build configuration list for PBXProject "coWeaveViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05B53D991FC2E125003639B4 /* Debug */,
@@ -527,7 +531,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		05B53D9B1FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeave Viewer" */ = {
+		05B53D9B1FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeaveViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05B53D9C1FC2E125003639B4 /* Debug */,
@@ -536,7 +540,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		05B53D9E1FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeave ViewerTests" */ = {
+		05B53D9E1FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeaveViewerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05B53D9F1FC2E125003639B4 /* Debug */,
@@ -545,7 +549,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		05B53DA11FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeave ViewerUITests" */ = {
+		05B53DA11FC2E125003639B4 /* Build configuration list for PBXNativeTarget "coWeaveViewerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05B53DA21FC2E125003639B4 /* Debug */,

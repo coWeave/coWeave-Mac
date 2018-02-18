@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/bfrisch/XcodeProjects/coWeave Mac/coWeave Viewer.xcodeproj">
+      location = "self:/Users/bfrisch/XcodeProjects/coWeave Viewer/coWeaveViewer.xcodeproj">
    </FileRef>
 </Workspace>
